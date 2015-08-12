@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>phpstorm-project-opener</string>
+	<key>connections</key>
+	<dict>
+		<key>82708759-D999-4EA5-9AC4-91B285EA0D6B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6BF8ABD6-F9CF-4C9D-9498-55B7F1FAC456</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Hans Dubois</string>
+	<key>description</key>
+	<string>Open a PHPStorm Project</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Open PHPStorm Project</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -a /Applications/PhpStorm.app {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6BF8ABD6-F9CF-4C9D-9498-55B7F1FAC456</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>ps</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading PHPStorm projects</string>
+				<key>script</key>
+				<string>python phpstorm.py</string>
+				<key>subtext</key>
+				<string>Open your PHPStorm project</string>
+				<key>title</key>
+				<string>Open a PHPStorm project</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>82708759-D999-4EA5-9AC4-91B285EA0D6B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>6BF8ABD6-F9CF-4C9D-9498-55B7F1FAC456</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>82708759-D999-4EA5-9AC4-91B285EA0D6B</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>www.hansdubois.nl</string>
+</dict>
+</plist>
