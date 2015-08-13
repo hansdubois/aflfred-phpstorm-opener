@@ -16,20 +16,27 @@ def getProjectDirectories():
                 folderList = projectDirectory.split('/')
                 projectName = folderList[-1]
 
-                listProject = {projectName, projectDirectory};
-
-                projects[projectDirectory] = projectName
+                projects[projectName] = projectDirectory
 
         return projects
 
-def main(wf):
-    projects = wf.cached_data('projects', getProjectDirectories, max_age= -1)
+def urlSearch(project):
+    return project
 
-    for dir, name in projects.iteritems():
-        wf.add_item(title=name,
-                    subtitle=dir,
-                    icon=ICON_WEB,
-                    arg=dir,
+def main(wf):
+    allProjects = wf.cached_data('allProjects', getProjectDirectories, max_age= -1)
+
+    """ Filter the projects """
+    if len(wf.args):
+        projects = wf.filter(wf.args[0], allProjects, key=urlSearch)
+    else:
+        projects = allProjects
+
+    for project in projects:
+        wf.add_item(title=project,
+                    subtitle=allProjects[project],
+                    icon="phpstorm.png",
+                    arg=allProjects[project],
                     valid=True)
 
     wf.send_feedback()

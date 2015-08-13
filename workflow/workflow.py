@@ -1782,6 +1782,8 @@ class Workflow(object):
     def filter(self, query, items, key=lambda x: x, ascending=False,
                include_score=False, min_score=0, max_results=0,
                match_on=MATCH_ALL, fold_diacritics=True):
+
+
         """Fuzzy search filter. Returns list of ``items`` that match ``query``.
 
         ``query`` is case-insensitive. Any item that does not contain the

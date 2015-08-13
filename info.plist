@@ -67,7 +67,7 @@
 				<key>runningsubtext</key>
 				<string>Loading PHPStorm projects</string>
 				<key>script</key>
-				<string>python phpstorm.py</string>
+				<string>python phpstorm.py {query}</string>
 				<key>subtext</key>
 				<string>Open your PHPStorm project</string>
 				<key>title</key>
