@@ -8,3 +8,6 @@ Setup:
 
 Usage:
 Keyword ps {project}
+
+## Note
+To make sure the workflow works disable the open latest project option in PHPStorm. Otherwise it will open the project twice.
